@@ -82,7 +82,7 @@
             ALTER TABLE IF EXISTS CUSTOMER RENAME TO MYTABLE5;
         </rollback>  
     </changeSet>
-  <changeSet  author="Dan"  id="4432535-read_result_set" context="DEV" labels="Feature1">  
+<!--  <changeSet  author="Dan"  id="4432535-read_result_set" context="DEV" labels="Feature1">  
         <sqlFile path="rawsql/read_result_set.sql"
                 relativeToChangelogFile="true"  
                 splitStatements="false"/>
@@ -91,7 +91,7 @@
             relativeToChangelogFile="true"  
             splitStatements="false"/>
         </rollback>
-    </changeSet>
+    </changeSet> -->
     <changeSet  author="liquibase-docs"  id="createView-example2">  
         <createView viewName="MYVIEW_CUSTOMER">
             SELECT * FROM CUSTOMER;
